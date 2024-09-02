@@ -1,0 +1,354 @@
+.header {
+    padding: 8px 0;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+@media(max-width: 768px) {
+    .header__container {
+        display:block;
+        justify-content: center;
+        text-align: center
+    }
+}
+
+.header__container__logo {
+    max-height: 72px
+}
+
+@media(max-width: 768px) {
+    .header__container__logo {
+        max-height:80px;
+        margin-bottom: 8px
+    }
+}
+
+.header__container__button {
+    background-color: #000;
+    width: 200px
+}
+
+@media(max-width: 768px) {
+    .header__container__button {
+        width:100%;
+        margin-bottom: 16px
+    }
+}
+
+.header__container__button:hover {
+    border: 2px solid #ff4500;
+    color: #ff4500;
+    font-weight: 500
+}
+
+.hero {
+    background-image: url(../../dist/images/hero-john-wick-v2.png);
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #1b1b1b;
+    padding-bottom: 48px
+}
+
+@media(max-width: 1279px) {
+    .hero {
+        background-image:url(../../dist/images/hero-john-wick-mobile.png)
+    }
+}
+
+.hero__container {
+    align-items: center;
+    text-align: center
+}
+
+.hero__container__title {
+    max-width: 100%;
+    margin-top: 45vh;
+    margin-bottom: 36px
+}
+
+@media(max-width: 1023px) {
+    .hero__container__title {
+        max-width:90%;
+        margin-top: 35vh
+    }
+}
+
+.hero__container__end {
+    max-width: 100%;
+    margin-top: 36px
+}
+
+.chapter {
+    background-color: #1b1b1b;
+    padding: 48px 0
+}
+
+.chapter__container__tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px
+}
+
+.chapter__container__button {
+    background-color: #1b1b1b;
+    width: 24%
+}
+
+@media(max-width: 768px) {
+    .chapter__container__button {
+        font-size:12px !important
+    }
+}
+
+.chapter__container__button--is-active {
+    border: 2px solid #ff4500 !important;
+    color: #ff4500 !important;
+    font-weight: 500 !important
+}
+
+.chapter__container__button:hover {
+    border: 2px solid #ff4500 !important;
+    color: #ff4500 !important;
+    font-weight: 500 !important
+}
+
+.chapter__container__item {
+    display: none;
+    grid-template-columns: 2fr 3fr;
+    gap: 16px;
+    margin-bottom: 24px
+}
+
+.chapter__container__item__img {
+    width: 100%
+}
+
+@media(max-width: 768px) {
+    .chapter__container__item__img {
+        margin-bottom:16px
+    }
+}
+
+.chapter__container__item--is-active {
+    display: grid
+}
+
+@media(max-width: 768px) {
+    .chapter__container__item--is-active {
+        display:block
+    }
+}
+
+.movies {
+    background-color: #1b1b1b;
+    padding: 48px 0
+}
+
+.movies__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px
+}
+
+@media(max-width: 768px) {
+    .movies__container {
+        grid-template-columns:1fr 1fr
+    }
+}
+
+.movies__container__item {
+    align-items: center
+}
+
+.movies__container__item__img {
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 8px
+}
+
+.movies__container__item__button {
+    background-color: #1b1b1b;
+    width: 100%;
+    margin-bottom: 16px
+}
+
+.movies__container__item__button:hover {
+    border: 2px solid #fff;
+    font-weight: 500
+}
+
+.movies__container__item__button--main {
+    border: 1px solid #ff4500 !important;
+    color: #ff4500 !important
+}
+
+.movies__container__item__button--main:hover {
+    border: 2px solid #ff4500 !important;
+    font-weight: 500 !important
+}
+
+.collection {
+    background-color: #1b1b1b;
+    padding: 48px 0
+}
+
+.collection__container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 24px
+}
+
+@media(max-width: 768px) {
+    .collection__container {
+        display:block
+    }
+}
+
+.collection__container__text__button {
+    background-color: #1b1b1b;
+    width: 100%;
+    margin-top: 24px
+}
+
+.collection__container__text__button:hover {
+    border: 2px solid #ff4500;
+    color: #ff4500;
+    font-weight: 500
+}
+
+.collection__container__image__img {
+    width: 100%
+}
+
+@media(max-width: 768px) {
+    .collection__container__image__img {
+        margin-top:24px;
+        padding: 0 36px
+    }
+}
+
+.footer {
+    padding: 8px 0;
+    background-color: #000
+}
+
+.footer__container {
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+.footer__container__img {
+    width: 200px;
+    margin: 8px 0
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-position: inside
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto
+}
+
+@media(max-width: 1024px) {
+    .container {
+        width:90%
+    }
+}
+
+.text {
+    font-size: 16px;
+    font-family: "Roboto",sans-serif;
+    margin-bottom: 8px;
+    color: gray
+}
+
+.text--small {
+    font-size: 14px;
+    font-family: "Roboto",sans-serif;
+    margin-bottom: 8px;
+    color: gray
+}
+
+.title {
+    font-size: 36px;
+    line-height: 110%;
+    font-family: "Oswald",sans-serif;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 24px
+}
+
+.title--small {
+    font-size: 24px;
+    line-height: 110%;
+    font-family: "Oswald",sans-serif;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 24px
+}
+
+.title--large {
+    font-size: 48px;
+    line-height: 110%;
+    font-family: "Oswald",sans-serif;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 24px
+}
+
+@media(max-width: 768px) {
+    .title--large {
+        font-size:36px;
+        line-height: 110%;
+        font-family: "Oswald",sans-serif;
+        font-weight: bold;
+        color: #fff
+    }
+}
+
+.title--no-margin {
+    font-size: 36px;
+    line-height: 110%;
+    font-family: "Oswald",sans-serif;
+    font-weight: bold;
+    color: #fff
+}
+
+.subtitle {
+    font-size: 24px;
+    font-family: "Oswald",sans-serif;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 24px
+}
+
+.button {
+    padding: 8px 16px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    font-family: "Oswald",sans-serif;
+    font-weight: 200;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer
+}
